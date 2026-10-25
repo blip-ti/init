@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дорожная карта внедрения: Инженерная школа</title>
+  <meta name="description" content="Интерактивная дорожная карта внедрения программы «Инженерная школа». Полный цикл на 1 учебный год, прозрачные KPI по этапам, обучение 2 педагогов и запуск за 15 дней.">
+  <meta name="keywords" content="инженерная школа, дорожная карта внедрения, кружок робототехники в школе, методика робототехники, обучение педагогов">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-theme">
+  <!-- Soft Ambient Glow Orbs -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+
+  <!-- Floating Modern Header -->
+  <header class="site-header" id="header">
+    <div class="header-nav-wrapper">
+      <a href="#hero" class="brand-logo" id="brand-logo">
+        <span class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+        </span>
+        <span class="brand-text">ИНЖЕНЕРНАЯ <span class="text-accent">ШКОЛА</span></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <ul class="nav-links">
+          <li><a href="#roadmap" class="nav-link">Дорожная карта</a></li>
+          <li><a href="#kpi-summary" class="nav-link">Метрики и KPI</a></li>
+          <li><a href="#kit" class="nav-link">Комплектация набора</a></li>
+          <li><a href="#faq" class="nav-link">Частые вопросы</a></li>
+        </ul>
+      </nav>
+
+      <button id="mobile-menu-btn" class="mobile-menu-toggle" aria-label="Открыть мобильное меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav" id="mobile-nav">
+      <ul class="mobile-nav-links">
+        <li><a href="#roadmap" class="mobile-nav-link">Дорожная карта</a></li>
+        <li><a href="#kpi-summary" class="mobile-nav-link">Метрики и KPI</a></li>
+        <li><a href="#kit" class="mobile-nav-link">Комплектация набора</a></li>
+        <li><a href="#faq" class="mobile-nav-link">Частые вопросы</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>Инженерная школа · Программа внедрения на 1 учебный год</span>
+          </div>
+
+          <h1 class="hero-title">
+            Дорожная карта внедрения <br>
+            <span class="gradient-text">«Инженерная школа»</span>
+          </h1>
+
+          <p class="hero-lead">
+            Полный цикл интеграции робототехники в школу, лицей или детский центр: от диагностики ресурсов до первого открытого занятия за <strong>15 дней</strong> и годового отчета с измеримыми результатами.
+          </p>
+
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <span class="highlight-num">15</span>
+              <span class="highlight-label">дней до старта первых занятий</span>
+            </div>
+            <div class="highlight-divider"></div>
+            <div class="highlight-item">
+              <span class="highlight-num">2</span>
+              <span class="highlight-label">аттестованных педагога (24 ч)</span>
+            </div>
+            <div class="highlight-divider"></div>
+            <div class="highlight-item">
+              <span class="highlight-num">36</span>
+              <span class="highlight-label">готовых конспектов уроков на 3 года обучения</span>
+            </div>
+          </div>
+
+          <div class="hero-buttons">
+            <a href="#roadmap" class="btn btn-primary btn-lg" id="explore-roadmap-btn">
+              <span>Интерактивная карта</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#kit" class="btn btn-glass btn-lg" id="explore-kit-btn">
+              <span>Комплектация набора</span>
+            </a>
+          </div>
+
+          <div class="hero-trust">
+            <span class="trust-icon">✓</span>
+            <span class="trust-text">Соответствует стандартам ФГОС и ДО · Полное методическое сопровождение</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="image-wrapper glow-card">
+            <img src="assets/hero.jpg" alt="Класс программы «Инженерная школа»" class="hero-img" id="hero-main-img">
+            <div class="visual-tag tag-top">
+              <div class="tag-icon">⚡</div>
+              <div class="tag-text">
+                <span class="tag-title">Срок запуска</span>
+                <span class="tag-sub">Старт через 10–15 дней</span>
+              </div>
+            </div>
+            <div class="visual-tag tag-bottom">
+              <div class="tag-icon">🎓</div>
+              <div class="tag-text">
+                <span class="tag-title">2 сертифицированных педагога</span>
+                <span class="tag-sub">Базовый курс 24 часа + аттестация</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Metrics / KPI Section (12 месяцев) -->
+    <section class="metrics-section" id="kpi-summary">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">Финальные результаты</div>
+          <h2 class="section-title">Итоговые показатели проекта (12 месяцев)</h2>
+          <p class="section-desc">Каждый этап дорожной карты опирается на строгие KPI. Вот что гарантированно получает ваша организация по итогам первого года реализации:</p>
+        </div>
+
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-icon-wrap icon-cyan">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="metric-value" data-target="2">2</div>
+            <div class="metric-title">Педагога сертифицированы</div>
+            <p class="metric-text">Обучение по 24 академических часа на каждого преподавателя, сдача аттестации и персональные сертификаты государственного образца.</p>
+            <div class="metric-badge">24 ч × 2 педагога</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon-wrap icon-purple">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <div class="metric-value" data-target="36">36</div>
+            <div class="metric-title">Конспектов занятий на 3 года обучения</div>
+            <p class="metric-text">Полная методическая база на 3 года обучения: поурочные сценарии, 3D-инструкции по сборке, алгоритмы программирования и рабочие тетради.</p>
+            <div class="metric-badge">Курс на 3 года обучения</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon-wrap icon-emerald">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div class="metric-value" data-target="20">20+</div>
+            <div class="metric-title">Занятий с детьми проведено</div>
+            <p class="metric-text">Устойчивый рабочий ритм кружка: регулярные практические уроки, отработка проектных навыков и решение инженерных кейсов.</p>
+            <div class="metric-badge">От 1 действующей группы</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon-wrap icon-amber">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <div class="metric-value" data-target="1">1</div>
+            <div class="metric-title">Итоговый отчёт для руководства</div>
+            <p class="metric-text">Комплексный аналитический документ с индивидуальными карточками динамики каждого ребенка для администрации и родителей.</p>
+            <div class="metric-badge">Оценка прогресса 100%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Interactive Roadmap Section -->
+    <section class="roadmap-section" id="roadmap">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">Пошаговый план</div>
+          <h2 class="section-title">Интерактивная дорожная карта внедрения</h2>
+          <p class="section-desc">Четыре ключевых этапа внедрения программы робототехники с фиксированными сроками, перечнем задач, индикаторами KPI и гарантированным результатом.</p>
+        </div>
+
+        <!-- Stage Filter & Progress Overview -->
+        <div class="roadmap-controls">
+          <div class="timeline-stepper" id="timeline-stepper">
+            <button class="step-btn active" data-stage="0" id="step-btn-0">
+              <span class="step-number">1</span>
+              <span class="step-info">
+                <span class="step-title">Диагностика</span>
+                <span class="step-time">1–5 дней</span>
+              </span>
+            </button>
+            <div class="step-line"></div>
+            <button class="step-btn" data-stage="1" id="step-btn-1">
+              <span class="step-number">2</span>
+              <span class="step-info">
+                <span class="step-title">Обучение и комплект</span>
+                <span class="step-time">5–10 дней</span>
+              </span>
+            </button>
+            <div class="step-line"></div>
+            <button class="step-btn" data-stage="2" id="step-btn-2">
+              <span class="step-number">3</span>
+              <span class="step-info">
+                <span class="step-title">Запуск занятий</span>
+                <span class="step-time">10–15 дней</span>
+              </span>
+            </button>
+            <div class="step-line"></div>
+            <button class="step-btn" data-stage="3" id="step-btn-3">
+              <span class="step-number">4</span>
+              <span class="step-info">
+                <span class="step-title">Итоги и развитие</span>
+                <span class="step-time">6 мес.</span>
+              </span>
+            </button>
+          </div>
+
+          <div class="view-toggles">
+            <button class="view-pill active" id="view-all-btn">Все этапы сразу</button>
+            <button class="view-pill" id="view-tabbed-btn">Пошаговый режим</button>
+            <button class="view-pill checklist-pill" id="view-checklist-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Чек-лист контроля (<span id="checked-count">0</span>/15)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Roadmap Cards Container -->
+        <div class="stages-container" id="stages-container">
+
+          <!-- STAGE 1 -->
+          <article class="stage-card" data-stage-index="0" id="stage-card-0">
+            <div class="stage-header">
+              <div class="stage-time-badge">
+                <span class="badge-icon">⏳</span>
+                <span>Срок: 1–5 дней</span>
+              </div>
+              <div class="stage-num-badge">Этап 01</div>
+            </div>
+
+            <div class="stage-body">
+              <div class="stage-main-info">
+                <h3 class="stage-title">Диагностика и подготовка</h3>
+                <p class="stage-subtitle">Анализ технической готовности учреждения, выбор преподавательского состава и юридическое закрепление расписания.</p>
+              </div>
+
+              <div class="stage-content-grid">
+                <!-- Задачи -->
+                <div class="content-block tasks-block">
+                  <div class="block-label">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="9 11 12 14 22 4"></polyline>
+                      <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                    </svg>
+                    <span>Задачи этапа</span>
+                  </div>
+                  <ul class="task-list">
+                    <li>
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="kpi-check" data-item="1-1">
+                        <span class="checkmark"></span>
+                        <span class="task-text">Аудит ресурсов организации: помещение, оборудование, бюджет</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="kpi-check" data-item="1-2">
+                        <span class="checkmark"></span>
+                        <span class="task-text">Определение 2 педагогов для обучения</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="kpi-check" data-item="1-3">
+                        <span class="checkmark"></span>
+                        <span class="task-text">Подписание договора и согласование графика</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Показатели KPI -->
+                <div class="content-block kpi-block">
+                  <div class="block-label">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 20V10"></path>
+                      <path d="M18 20V4"></path>
+                      <path d="M6 20v-4"></path>
+                    </svg>
+                    <span>Показатели (KPI) для контроля</span>
+                  </div>
+                  <div class="kpi-tags">
+                    <div class="kpi-tag-item">
+                      <span class="kpi-tag-badge">KPI</span>
+                      <span class="kpi-tag-desc">Договор подписан — <strong>1 шт.</strong></span>
+                    </div>
+                    <div class="kpi-tag-item">
+                      <span class="kpi-tag-badge">KPI</span>
+                      <span class="kpi-tag-desc"><strong>2 педагога</strong> зачислены на обучение</span>
+                    </div>
+                    <div class="kpi-tag-item">
+                      <span class="kpi-tag-badge">KPI</span>
+                      <span class="kpi-tag-desc">Карта ресурсов организации готова</span>
+                    </div>
+                    <div class="kpi-tag-item">
+                      <span class="kpi-tag-badge">KPI</span>
+                      <span class="kpi-tag-desc">Дата старта обучения зафиксирована</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Результат этапа -->
+              <div class="stage-result-box">
+                <div class="result-badge-label">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>Результат этапа:</span>
+                </div>
+                <div class="result-text">
+                  Подписанный договор, 2 педагога определены, расписание согласовано
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- STAGE 2 -->
+          <article class="stage-card" data-stage-index="1" id="stage-card-1">
+            <div class="stage-header">
+              <div class="stage-time-badge">
+                <span class="badge-icon">⏳</span>
+                <span>Срок: 5–10 дней</span>
+              </div>
+              <div class="stage-num-badge">Этап 02</div>
+            </div>
+
+            <div class="stage-body">
+              <div class="stage-main-info">
+                <h3 class="stage-title">Обучение и поставка набора</h3>
+                <p class="stage-subtitle">Поставка оборудования, углубленный интенсив для преподавателей и передача всей учебно-методической документации.</p>
+              </div>
+
+              <div class="stage-content-grid">
+                <!-- Задачи -->
+                <div class="content-block tasks-block">
+                  <div class="block-label">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="9 11 12 14 22 4"></polyline>
+                      <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                    </svg>
+                    <span>Задачи этапа</span>
+                  </div>
+                  <ul class="task-list">
+                    <li>
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="kpi-check" data-item="2-1">
+                        <span class="checkmark"></span>
+                        <span class="task-text">Передача робототехнического набора и материалов</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="kpi-check" data-item="2-2">
+                        <span class="checkmark"></span>
+                        <span class="task-text">Базовый курс обучения — 24 часа на педагога</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="kpi-check" data-item="2-3">
+                        <span class="checkmark"></span>
+                        <span class="task-text">Передача методологии (конспекты, схемы, документы)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="kpi-check" data-item="2-4">
+                        <span class="checkmark"></span>
+                        <span class="task-text">Итоговая аттестация и сертификация</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Показатели KPI -->
+                <div class="content-block kpi-block">
+                  <div class="block-label">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 20V10"></path>
+                      <path d="M18 20V4"></path>
+                      <path d="M6 20v-4"></path>
+                    </svg>
+                    <span>Показатели (KPI) для контроля</span>
+                  </div>
+                  <div class="kpi-tags">
+                    <div class="kpi-tag-item">
+                      <span class="kpi-tag-badge">KPI</span>
+                      <span class="kpi-tag-desc">Набор передан и развёрнут — <strong>1 комплект</strong></span>
+                    </div>
+                    <div class="kpi-tag-item">
+                      <span class="kpi-tag-badge">KPI</span>
+                      <span class="kpi-tag-desc"><strong>24 ч обучения × 2 педагога</strong></span>
+                    </div>
+                    <div class="kpi-tag-item">
+                      <span class="kpi-tag-badge">KPI</span>
+                      <span class="kpi-tag-desc"><strong>2 педагога</strong> аттестованы и сертифицированы</span>
+                    </div>
+                    <div class="kpi-tag-item">
+                      <span class="kpi-tag-badge">KPI</span>
+                      <span class="kpi-tag-desc"><strong>36 конспектов занятий на 3 года обучения</strong> передано</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Результат этапа -->
+              <div class="stage-result-box">
+                <div class="result-badge-label">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>Результат этапа:</span>
+                </div>
+                <div class="result-text">
+                  Оба педагога сертифицированы, методология передана, набор в работе
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- STAGE 3 -->
+          <article class="stage-card" data-stage-index="2" id="stage-card-2">
+            <div class="stage-header">
+              <div class="stage-time-badge">
+                <span class="badge-icon">⏳</span>
+                <span>Срок: 10–15 дней</span>
+              </div>
+              <div class="stage-num-badge">Этап 03</div>
+            </div>
+
+            <div class="stage-body">
+              <div class="stage-main-info">
+                <h3 class="stage-title">Запуск занятий</h3>
+                <p class="stage-subtitle">Старт регулярных занятий с учащимися, методическое сопровождение и проведение открытого показательного урока для родителей.</p>
+              </div>
+
+              <div class="stage-content-grid">
+                <!-- Задачи -->
+                <div class="content-block tasks-block">
+                  <div class="block-label">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="9 11 12 14 22 4"></polyline>
+                      <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                    </svg>
+                    <span>Задачи этапа</span>
+                  </div>
+                  <ul class="task-list">
+                    <li>
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="kpi-check" data-item="3-1">
+                        <span class="checkmark"></span>
+                        <span class="task-text">Старт занятий с детьми по готовым конспектам</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="kpi-check" data-item="3-2">
+                        <span class="checkmark"></span>
+                        <span class="task-text">Ежемесячные консультации с методистом</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="kpi-check" data-item="3-3">
+                        <span class="checkmark"></span>
+                        <span class="task-text">Корректировка программы по ходу года</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="kpi-check" data-item="3-4">
+                        <span class="checkmark"></span>
+                        <span class="task-text">Подготовка и проведение открытого занятия</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Показатели KPI -->
+                <div class="content-block kpi-block">
+                  <div class="block-label">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 20V10"></path>
+                      <path d="M18 20V4"></path>
+                      <path d="M6 20v-4"></path>
+                    </svg>
+                    <span>Показатели (KPI) для контроля</span>
+                  </div>
+                  <div class="kpi-tags">
+                    <div class="kpi-tag-item">
+                      <span class="kpi-tag-badge">KPI</span>
+                      <span class="kpi-tag-desc">Занятия проводятся — <strong>от 1 группы</strong></span>
+                    </div>
+                    <div class="kpi-tag-item">
+                      <span class="kpi-tag-badge">KPI</span>
+                      <span class="kpi-tag-desc"><strong>4 консультации</strong> с методистом проведено</span>
+                    </div>
+                    <div class="kpi-tag-item">
+                      <span class="kpi-tag-badge">KPI</span>
+                      <span class="kpi-tag-desc"><strong>20+ занятий</strong> с детьми проведено</span>
+                    </div>
+                    <div class="kpi-tag-item">
+                      <span class="kpi-tag-badge">KPI</span>
+                      <span class="kpi-tag-desc"><strong>1 открытое мероприятие</strong> проведено</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Результат этапа -->
+              <div class="stage-result-box">
+                <div class="result-badge-label">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>Результат этапа:</span>
+                </div>
+                <div class="result-text">
+                  Кружок работает в штатном режиме, проведено открытое занятие для родителей
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- STAGE 4 -->
+          <article class="stage-card" data-stage-index="3" id="stage-card-3">
+            <div class="stage-header">
+              <div class="stage-time-badge">
+                <span class="badge-icon">⏳</span>
+                <span>Срок: 6 мес.</span>
+              </div>
+              <div class="stage-num-badge">Этап 04</div>
+            </div>
+
+            <div class="stage-body">
+              <div class="stage-main-info">
+                <h3 class="stage-title">Итоги и развитие</h3>
+                <p class="stage-subtitle">Глубокая диагностика навыков детей, отчет перед администрацией, углубленное обучение педагогов и масштабирование на второй год.</p>
+              </div>
+
+              <div class="stage-content-grid">
+                <!-- Задачи -->
+                <div class="content-block tasks-block">
+                  <div class="block-label">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="9 11 12 14 22 4"></polyline>
+                      <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                    </svg>
+                    <span>Задачи этапа</span>
+                  </div>
+                  <ul class="task-list">
+                    <li>
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="kpi-check" data-item="4-1">
+                        <span class="checkmark"></span>
+                        <span class="task-text">Итоговая диагностика прогресса детей</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="kpi-check" data-item="4-2">
+                        <span class="checkmark"></span>
+                        <span class="task-text">Подготовка отчёта с метриками для администрации</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="kpi-check" data-item="4-3">
+                        <span class="checkmark"></span>
+                        <span class="task-text">Доп. модуль для педагогов (продвинутый уровень)</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="kpi-check" data-item="4-4">
+                        <span class="checkmark"></span>
+                        <span class="task-text">Планирование следующего учебного года</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Показатели KPI -->
+                <div class="content-block kpi-block">
+                  <div class="block-label">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 20V10"></path>
+                      <path d="M18 20V4"></path>
+                      <path d="M6 20v-4"></path>
+                    </svg>
+                    <span>Показатели (KPI) для контроля</span>
+                  </div>
+                  <div class="kpi-tags">
+                    <div class="kpi-tag-item">
+                      <span class="kpi-tag-badge">KPI</span>
+                      <span class="kpi-tag-desc">Итоговый отчёт сформирован — <strong>1 документ</strong></span>
+                    </div>
+                    <div class="kpi-tag-item">
+                      <span class="kpi-tag-badge">KPI</span>
+                      <span class="kpi-tag-desc">Карточки наблюдений заполнены на всех детей группы</span>
+                    </div>
+                    <div class="kpi-tag-item">
+                      <span class="kpi-tag-badge">KPI</span>
+                      <span class="kpi-tag-desc">Решение о продлении / масштабировании принято</span>
+                    </div>
+                    <div class="kpi-tag-item">
+                      <span class="kpi-tag-badge">KPI</span>
+                      <span class="kpi-tag-desc">Программа на новый год согласована</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Результат этапа -->
+              <div class="stage-result-box">
+                <div class="result-badge-label">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <span>Результат этапа:</span>
+                </div>
+                <div class="result-text">
+                  Годовой отчёт с метриками, планы на 2-й год
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Hardware & Methodology Showcase Section -->
+    <section class="kit-section" id="kit">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">Материальная база</div>
+          <h2 class="section-title">Что входит в комплект поставки</h2>
+          <p class="section-desc">Организация получает полностью укомплектованное решение: аппаратную часть, авторскую методику и документацию для соответствия образовательным стандартам.</p>
+        </div>
+
+        <div class="kit-grid">
+          <div class="kit-visual">
+            <div class="glow-card image-wrapper">
+              <img src="assets/kit.jpg" alt="Робототехнический набор и методические материалы" class="kit-img">
+              <div class="kit-visual-overlay">
+                <span class="pill-badge">Готово к работе в классе</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="kit-cards">
+            <div class="kit-feature-card">
+              <div class="feature-icon icon-cyan">🤖</div>
+              <div class="feature-content">
+                <h4>Робототехнический набор</h4>
+                <p>1 полный комплект: программируемые контроллеры, моторы, сервоприводы, оптические и ультразвуковые датчики, надежная элементная база в защитном кейсе.</p>
+              </div>
+            </div>
+
+            <div class="kit-feature-card">
+              <div class="feature-icon icon-purple">📚</div>
+              <div class="feature-content">
+                <h4>36 поурочных конспектов на 3 года обучения</h4>
+                <p>Программа рассчитана на 3 года обучения. Каждый урок расписан поминутно: цели, теория, пошаговая сборка моделей, практические задания и рефлексия.</p>
+              </div>
+            </div>
+
+            <div class="kit-feature-card">
+              <div class="feature-icon icon-emerald">🎓</div>
+              <div class="feature-content">
+                <h4>Обучение педагогов</h4>
+                <p>24 академических часа на каждого педагога с методистом-практиком. Официальная аттестация, сертификация и бессрочный доступ к вебинарам.</p>
+              </div>
+            </div>
+
+            <div class="kit-feature-card">
+              <div class="feature-icon icon-amber">📊</div>
+              <div class="feature-content">
+                <h4>Методическая поддержка</h4>
+                <p>4 консультации с куратором, готовые сценарии открытых занятий для родителей, шаблоны карточек наблюдения и финального отчета.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">Вопросы и ответы</div>
+          <h2 class="section-title">Часто задаваемые вопросы</h2>
+          <p class="section-desc">Всё, что важно знать администрации и педагогам перед стартом программы.</p>
+        </div>
+
+        <div class="faq-accordion" id="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Нужен ли педагогам предварительный опыт в робототехнике или программировании?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Нет, предварительный опыт не требуется. Программа базового обучения на 24 часа разработана специально для учителей информатики, физики, технологии или начальных классов без навыков робототехники. Материал излагается от простого к сложному с практическими упражнениями.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Какие требования предъявляются к помещению и компьютерам?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>На 1-м этапе (1–5 дней) мы проводим бесплатный аудит ресурсов. Для занятий подходит стандартный кабинет информатики или класс со столами и персональными компьютерами / ноутбуками под управлением Windows, macOS или Linux. Специального переоснащения не требуется.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Как подтверждается квалификация педагогов?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>По итогам 24-часового курса и сдачи практической аттестации педагоги получают официальные именные сертификаты о повышении квалификации, которые учитываются при аттестации педагогических работников.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Как контролируется динамика успеваемости детей?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>В комплект входят готовые бланки и карточки педагогического наблюдения. Преподаватель фиксирует прогресс по инженерным навыкам, логике и командной работе. Через 6 месяцев формируется сводный итоговый отчёт для администрации и родителей.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Что происходит после завершения первого года?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>На этапе 4 (6 мес. — 12 мес.) мы проводим стратегическую сессию и согласовываем план на 2-й год. Предоставляется продвинутый модуль обучения для педагогов, алгоритмы участия детей в профильных олимпиадах и возможность доукомплектования новых групп.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <div class="brand-logo footer-logo">
+          <span class="logo-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+          </span>
+          <span class="brand-text">ИНЖЕНЕРНАЯ <span class="text-accent">ШКОЛА</span></span>
+        </div>
+        <p class="footer-tagline">Программа «Инженерная школа». Полный цикл внедрения на 1 учебный год с контролем показателей.</p>
+        <div class="footer-copy">© 2026 ИНЖЕНЕРНАЯ ШКОЛА. Все права защищены. Разработано в строгом соответствии с дорожной картой.</div>
+      </div>
+
+      <div class="footer-links-group">
+        <div class="footer-col">
+          <div class="footer-col-title">Этапы внедрения</div>
+          <ul>
+            <li><a href="#stage-card-0">1–5 дней: Диагностика</a></li>
+            <li><a href="#stage-card-1">5–10 дней: Обучение и набор</a></li>
+            <li><a href="#stage-card-2">10–15 дней: Запуск кружка</a></li>
+            <li><a href="#stage-card-3">6 мес.: Итоги и развитие</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-title">Документы и KPI</div>
+          <ul>
+            <li><a href="#kpi-summary">2 сертифицированных педагога</a></li>
+            <li><a href="#kpi-summary">36 конспектов занятий на 3 года обучения</a></li>
+            <li><a href="#kpi-summary">20+ уроков и открытое занятие</a></li>
+            <li><a href="#kpi-summary">1 итоговый годовой отчет</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Toast -->
+  <div class="toast-notification" id="toast-notify">
+    <div class="toast-icon">✓</div>
+    <div class="toast-message" id="toast-text">Действие выполнено</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
